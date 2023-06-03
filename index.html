@@ -8,10 +8,127 @@
         <!-- Reset Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
+        <!-- Embed Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
         <!-- Embed Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
+        <main>
+            <section class="form">
+                <div class="form__inner">
+                    <form
+                        action="MainController"
+                        method="POST"
+                        class="form__sign-up"
+                    >
+                        <h1 class="form__heading">Sign Up</h1>
+                        <!-- Full Name -->
+                        <div class="form__group">
+                            <label class="form__label" for="fullName">
+                                Full Name
+                            </label>
+                            <input
+                                class="form__input"
+                                type="text"
+                                placeholder="Name...."
+                                name="fullName"
+                                id="fullName"
+                            />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form__group">
+                            <label class="form__label" for="email">
+                                Email
+                            </label>
+                            <input
+                                class="form__input"
+                                type="text"
+                                placeholder="Email address...."
+                                name="email"
+                                id="email"
+                            />
+                        </div>
+
+                        <!-- Username -->
+                        <div class="form__group">
+                            <label class="form__label" for="username">
+                                Username
+                            </label>
+                            <input
+                                class="form__input"
+                                type="text"
+                                placeholder="Username...."
+                                name="username"
+                                id="username"
+                            />
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form__group">
+                            <label class="form__label" for="password">
+                                Password
+                            </label>
+                            <input
+                                class="form__input"
+                                type="text"
+                                placeholder="**************"
+                                name="password"
+                                id="password"
+                            />
+                        </div>
+
+                        <!-- Repeat password -->
+                        <div class="form__group">
+                            <label class="form__label" for="repeatPassword">
+                                Repeat password
+                            </label>
+                            <input
+                                class="form__input"
+                                type="text"
+                                placeholder="**************"
+                                name="repeatPassword"
+                                id="repeatPassword"
+                            />
+                        </div>
+
+                        <!-- Terms of User -->
+                        <div class="form__group form__group--term">
+                            <input
+                                class="form__input"
+                                type="checkbox"
+                                name="agreeTerm"
+                            />
+                            <span class="form__text">
+                                I agree to the <b>Terms of User</b>
+                            </span>
+                        </div>
+
+                        <!-- Form Actions -->
+                        <div class="form__group form__group--cta">
+                            <a
+                                href="#!"
+                                class="form__btn form__btn--sign-up btn"
+                            >
+                                Sign Up
+                            </a>
+                            <a href="#!" class="form__btn form__btn--sign-in">
+                                Sign in
+                                <i class="fa-solid fa-arrow-right form__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
         <!-- Embed Javascript -->
         <script src="./assets/js/main.js"></script>
     </body>

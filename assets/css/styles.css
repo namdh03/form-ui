@@ -25,13 +25,108 @@ button {
 }
 
 /* ==================== Common ==================== */
-.container {
-    width: 1200px;
-    max-width: calc(100% - 48px);
-    margin-left: auto;
-    margin-right: auto;
-}
-
 a {
     text-decoration: none;
+}
+
+.btn {
+    --height: 40px;
+    display: inline-block;
+    min-width: 150px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: var(--height);
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ==================== Form ==================== */
+.form {
+    height: 100vh;
+    background-color: var(--primary-color);
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+/* ==================== Form Sign Up ==================== */
+.form__sign-up {
+    padding: 50px;
+}
+
+.form__heading {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+.form__group {
+    margin-top: 30px;
+}
+
+.form__group--cta,
+.form__group--term {
+    display: flex;
+    align-items: center;
+}
+
+.form__group--cta {
+    justify-content: space-between;
+}
+
+.form__label {
+    display: block;
+    font-weight: 600;
+}
+
+.form__input[type="text"] {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #b4b2b2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form__input::placeholder {
+    font-weight: 600;
+    color: #b4b2b2;
+}
+
+.form__input[type="checkbox"] {
+    outline: none;
+    border: none;
+    background-color: #dfddb6;
+}
+
+.form__text {
+    margin-left: 8px;
+    font-weight: 600;
+    color: #b4b2b2;
+}
+
+.form__text b {
+    color: #8d8d8d;
+}
+
+.form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__btn--sign-up {
+    font-size: 2rem;
+}
+
+.form__btn--sign-in {
+    color: #8d8d8d;
+    font-weight: 600;
+}
+
+.form__icon {
+    margin-left: 4px;
 }
