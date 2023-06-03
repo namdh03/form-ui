@@ -14,6 +14,7 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
+    background-image: url(../img/background.jpg);
 }
 
 input,
@@ -33,5 +34,113 @@ button {
 }
 
 a {
+    color: black;
     text-decoration: none;
+}
+
+.btn {
+    --height: 40px;
+    display: inline-block;
+    min-width: 150px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: var(--height);
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* ==================== Login ==================== */
+.form__inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form--login {
+    /* margin: auto; */
+    width: 500px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.form__group {
+    margin: auto;
+    width: calc(100% - 120px);
+}
+
+.login__heading {
+    margin-top: 50px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login__input {
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.section-input {
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #e3d9aa;
+    width: 100%;
+    /* background-color: var(--primary-color); */
+    /* width: calc(100% - 150px); */
+    height: 30px;
+}
+
+.login__pass {
+    margin-top: 10px;
+}
+
+.login__checkbox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    /* font-weight: 600; */
+}
+
+.login__checkbox--link {
+    display: flex;
+    align-items: center;
+}
+
+.login__checkbox--remember {
+    display: flex;
+    align-items: center;
+}
+
+.login__checkbox--remember p {
+    margin-left: 5px;
+}
+
+.login__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login__signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.login__signup--link {
+    margin-left: 5px;
+    text-decoration: underline;
 }
