@@ -18,38 +18,53 @@
             </figure> -->
             <section class="form">
                 <div class="container">
-                    <div class="form__inner">
+                    <div class="form__inner--sign-in">
                         <form
                             action="MainController"
                             method="POST"
                             class="form--login"
                         >
-                            <div class="form__group">
-                                <h1 class="login__heading">LOGIN</h1>
-                                <div class="login__input">
+                            <h1 class="login__heading">LOGIN</h1>
+                            <div class="login__input">
+                                <div class="form__group">
                                     <input
                                         type="text"
                                         placeholder="Username"
                                         class="section-input login__user"
                                     />
+                                </div>
+                                <div class="form__group">
                                     <input
                                         type="text"
                                         placeholder="Password"
                                         class="section-input login__pass"
                                     />
                                 </div>
+                            </div>
+                            <div class="form__group">
                                 <div class="login__checkbox">
                                     <div class="login__checkbox--remember">
-                                        <input type="checkbox" />
-                                        <p>Remember me</p>
+                                        <input type="checkbox" id="remember" />
+                                        <label for="remember">
+                                            Remember me
+                                        </label>
                                     </div>
-                                    <a class="login__checkbox--link" href="#!">Forgot?</a>
+                                    <a class="login__checkbox--link" href="#!"
+                                        >Forgot?</a
+                                    >
                                 </div>
+                            </div>
+                            <div class="form__group">
                                 <div class="login__btn">
                                     <button class="btn">Login</button>
                                 </div>
-                                <p class="login__signup">Not a member? <a class="login__signup--link" href="#!">Sign up now</a></p>
                             </div>
+                            <p class="login__signup">
+                                Not a member?
+                                <a class="login__signup--link" href="#!"
+                                    >Sign up now</a
+                                >
+                            </p>
                         </form>
                     </div>
                 </div>
