@@ -85,7 +85,7 @@ a {
 .form__sign-up .form__group {
     opacity: 0;
     visibility: hidden;
-    margin-top: 36px;
+    margin-top: 30px;
 }
 
 .form__group--cta,
@@ -107,8 +107,8 @@ a {
 .form__input[type="email"],
 .form__input[type="text"] {
     width: 0;
-    margin: 0;
-    padding: 10px 0;
+    margin: 4px 0 0 0;
+    padding: 8px 0;
     background-color: transparent;
     outline: none;
     border: 2px solid #b4b2b2;
