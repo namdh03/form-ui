@@ -54,11 +54,6 @@ a {
 }
 
 /* ==================== Login ==================== */
-.form__inner {
-    height: 100vh;
-    position: relative;
-}
-
 .form {
     background-image: url(../img/pied-team.png);
     height: 100vh;
