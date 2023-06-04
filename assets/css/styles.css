@@ -14,6 +14,7 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
+    background-image: url(../img/background.jpg);
 }
 
 input,
@@ -37,6 +38,7 @@ label {
 } */
 
 a {
+    color: black;
     text-decoration: none;
 }
 
@@ -156,4 +158,117 @@ a {
 
 .form__icon {
     margin-left: 4px;
+}
+
+/* ==================== Login ==================== */
+.form__inner--sign-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 340px;
+}
+
+.form__inner--sign-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: calc(50% + 250px);
+    height: 100%;
+}
+
+/* .form__inner:hover .form--login {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+} */
+
+.form--login {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: all linear 0.3s;
+}
+
+.form--login .form__group {
+    margin: auto;
+    width: calc(100% - 120px);
+}
+
+.login__heading {
+    padding-top: 50px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login__input {
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.section-input {
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #e3d9aa;
+    width: 100%;
+    /* background-color: var(--primary-color); */
+    /* width: calc(100% - 150px); */
+    height: 30px;
+}
+
+.login__pass {
+    margin-top: 10px;
+}
+
+.login__checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    /* font-weight: 600; */
+}
+
+.login__signup--link,
+.login__checkbox--link {
+    color: #000000;
+}
+
+.login__checkbox--remember {
+    display: flex;
+    align-items: center;
+}
+
+.login__checkbox--remember p {
+    margin-left: 5px;
+}
+
+.login__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login__signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* padding-bottom: 40px; */
+}
+
+.login__signup--link {
+    margin-left: 5px;
+    text-decoration: underline;
 }

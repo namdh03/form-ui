@@ -23,6 +23,58 @@
     <body>
         <main>
             <section class="form">
+                <!-- Container 1 -->
+                <div class="container">
+                    <div class="form__inner--sign-in">
+                        <form
+                            action="MainController"
+                            method="POST"
+                            class="form--login"
+                        >
+                            <h1 class="login__heading">LOGIN</h1>
+                            <div class="login__input">
+                                <div class="form__group">
+                                    <input
+                                        type="text"
+                                        placeholder="Username"
+                                        class="section-input login__user"
+                                    />
+                                </div>
+                                <div class="form__group">
+                                    <input
+                                        type="password"
+                                        placeholder="Password"
+                                        class="section-input login__pass"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <div class="login__checkbox">
+                                    <div class="login__checkbox--remember">
+                                        <input type="checkbox" id="remember" />
+                                        <label for="remember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a class="login__checkbox--link" href="#!"
+                                        >Forgot?</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <div class="login__btn">
+                                    <button class="btn">Login</button>
+                                </div>
+                            </div>
+                            <p class="login__signup">
+                                Not a member?
+                                <a class="login__signup--link" href="#!"
+                                    >Sign up now</a
+                                >
+                            </p>
+                        </form>
+                    </div>
+                </div>
                 <!-- Container 2 -->
                 <div class="container">
                     <div class="form__inner--sign-up">
@@ -82,7 +134,7 @@
                                 <input
                                     class="form__input"
                                     type="password"
-                                    placeholder="**************"
+                                    placeholder="************"
                                     name="password"
                                     id="password"
                                 />
@@ -96,7 +148,7 @@
                                 <input
                                     class="form__input"
                                     type="password"
-                                    placeholder="**************"
+                                    placeholder="************"
                                     name="repeatPassword"
                                     id="repeatPassword"
                                 />
