@@ -73,22 +73,19 @@ a {
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    transition: all linear 0.3s 0.3s;
 }
 
 .form__heading {
-    opacity: 0;
-    visibility: hidden;
     font-size: 3.6rem;
     font-weight: 600;
-    transition: all linear 0.3s 0.5s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .form__sign-up .form__group {
     opacity: 0;
     visibility: hidden;
     margin-top: 36px;
-    transition: all linear 0.3s 0.5s;
 }
 
 .form__group--cta,
@@ -109,7 +106,7 @@ a {
 .form__input[type="password"],
 .form__input[type="email"],
 .form__input[type="text"] {
-    width: 100%;
+    width: 0;
     margin: 0;
     padding: 10px 0;
     background-color: transparent;
@@ -193,7 +190,6 @@ a {
     overflow: hidden;
     opacity: 1;
     visibility: visible;
-    transition: all linear 0.3s;
 }
 
 .form--login .form__group {
@@ -202,6 +198,7 @@ a {
 }
 
 .login__heading {
+    margin: 0 auto;
     padding-top: 50px;
     font-size: 3.5rem;
     font-weight: 600;
@@ -271,4 +268,21 @@ a {
 .login__signup--link {
     margin-left: 5px;
     text-decoration: underline;
+}
+
+/* ==================== Typing ==================== */
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
