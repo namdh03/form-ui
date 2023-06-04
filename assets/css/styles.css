@@ -24,13 +24,17 @@ button {
     font-family: inherit;
 }
 
+label {
+    user-select: none;
+}
+
 /* ==================== Common ==================== */
-.container {
+/* .container {
     width: 1200px;
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 a {
     text-decoration: none;
@@ -52,23 +56,37 @@ a {
 
 /* ==================== Form ==================== */
 .form {
+    background-image: url(../img/pied-team.png);
     height: 100vh;
-    background-color: var(--primary-color);
-    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+    background-size: cover;
+    background-position: center;
 }
 
 /* ==================== Form Sign Up ==================== */
 .form__sign-up {
+    width: 0%;
+    height: 100%;
     padding: 50px;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s 0.3s;
 }
 
 .form__heading {
+    opacity: 0;
+    visibility: hidden;
     font-size: 3.6rem;
     font-weight: 600;
+    transition: all linear 0.3s 0.5s;
 }
 
-.form__group {
-    margin-top: 30px;
+.form__sign-up .form__group {
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 36px;
+    transition: all linear 0.3s 0.5s;
 }
 
 .form__group--cta,
@@ -115,7 +133,7 @@ a {
     color: #b4b2b2;
 }
 
-.form__text b {
+.form__text a {
     color: #8d8d8d;
 }
 

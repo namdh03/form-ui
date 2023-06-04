@@ -24,7 +24,7 @@
         <main>
             <section class="form">
                 <div class="container">
-                    <div class="form__inner">
+                    <div class="form__inner--sign-up">
                         <form
                             action="MainController"
                             method="POST"
@@ -52,7 +52,7 @@
                                 </label>
                                 <input
                                     class="form__input"
-                                    type="text"
+                                    type="email"
                                     placeholder="Email address...."
                                     name="email"
                                     id="email"
@@ -80,7 +80,7 @@
                                 </label>
                                 <input
                                     class="form__input"
-                                    type="text"
+                                    type="password"
                                     placeholder="**************"
                                     name="password"
                                     id="password"
@@ -94,7 +94,7 @@
                                 </label>
                                 <input
                                     class="form__input"
-                                    type="text"
+                                    type="password"
                                     placeholder="**************"
                                     name="repeatPassword"
                                     id="repeatPassword"
@@ -107,10 +107,12 @@
                                     class="form__input"
                                     type="checkbox"
                                     name="agreeTerm"
+                                    id="agreeTerm"
                                 />
-                                <span class="form__text">
-                                    I agree to the <b>Terms of User</b>
-                                </span>
+                                <label for="agreeTerm" class="form__text">
+                                    I agree to the
+                                    <a href="#!">Terms of User</a>
+                                </label>
                             </div>
 
                             <!-- Form Actions -->
