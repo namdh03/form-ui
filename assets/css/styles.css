@@ -104,6 +104,8 @@ a {
     font-weight: 600;
 }
 
+.form__input[type="password"],
+.form__input[type="email"],
 .form__input[type="text"] {
     width: 100%;
     margin: 0;
